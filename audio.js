@@ -1,20 +1,12 @@
 function iniciar(){
-	//cual es el tamaño maximo de la barra de progreso (600px)
 	maximo=600;
-	//obteniendo el reproductor
 	medio=document.getElementById('medio');
-	//obteniedo el boton de reproducir
 	reproducir=document.getElementById('reproducir');
-	//obteniendo la barra de progreso
 	barra=document.getElementById('barra');
-	//obteniendo el div con el progreso
 	progreso=document.getElementById('progreso');
-	//obteniendo la mascara que se muestra cuando el medio esta pausado
 	mascara=document.getElementById('mascara');
-	//obteniendo el elemento que muestra el porcentaje
 	porcentaje=document.getElementById('porcentaje');
 
-	//añadiendo evento para cuanso se realize click sobre los elementos ejecuten x funcion
 	reproducir.addEventListener('click', presionar, false);
 	barra.addEventListener('click', mover, false)
 	medio.addEventListener('click', presionar, false);
@@ -69,5 +61,4 @@ function mover(e){
 	}
 }
 
-//añadiendo evento para que se ejecute la funcion iniciar al cargar la pagina
 window.addEventListener('load',iniciar, false)

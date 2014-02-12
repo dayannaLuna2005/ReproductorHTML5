@@ -7,31 +7,24 @@
 	</head>
 	<body>
 		<section id="reproductor">
-			<!-- mascara que aparece cuando el video esta pausado -->
 			<div id="mascara" style="position:relative"><img src="icon-play.png" id="icon-play"></div>
-			<!-- reproductor de audio -->
 			<audio id="medio">
 				<source src="music.mp3">
 			</audio>
-			<!-- controles del reproductore de audio -->
 			<nav>
-				<!-- boton para reproducir -->
 				<div class="botones">
 					<button type="button" id="reproducir">Reproducir</button>
 				</div>
-				<!-- barra de progreso -->
 				<div id="barra">
 					<div id="progreso"></div>
 					<div id="porcentaje">0%</div>
 				</div>
-				<!-- control de volumen -->
 				<div class="botones">
 					<input type="range" id="volumen" min="0" max="1" step="0.00001" value="1">
 				</div>
 				<div style="clear:both"></div>
 			</nav> 
 		</section>
-		<!-- logo Angel Kurten -->
 		<section id="logo">
 			<span class="texto">A</span>
 		</section>
