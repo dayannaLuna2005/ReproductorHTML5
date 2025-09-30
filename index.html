@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Reproduccion de Video</title>
+		<link rel="stylesheet" href="video.css">
+		<script src="video.js"></script>
+	</head>
+	<body>
+		<section id="reproductor">
+			<div id="mascara" width="720" height="400"><img src="icon-play.png" id="icon-play"></div>
+			<video id="medio" width="720" height="400" poster="monster.png" preload="none">
+				<source src="1.mp4">
+			</video>
+			<nav>
+				<div class="botones">
+					<button type="button" id="reproducir">Reproducir</button> 
+				</div>
+				<div id="barra">
+					<div id="progreso"></div>
+					<div id="porcentaje">0%</div>
+				</div>
+				<div class="botones">
+					<input type="range" id="volumen" min="0" max="1" step="0.00001" value="1">
+				</div>
+				<div style="clear:both"></div>
+			</nav>
+		</section>
+		<section id="logo">
+			<span class="texto" id="texto">A</span>
+		</section>
+	</body>
+</html>
