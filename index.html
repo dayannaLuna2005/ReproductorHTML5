@@ -30,3 +30,35 @@
 		</section>
 	</body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Reproduccion de Audio</title>
+		<link rel="stylesheet" href="video.css">
+		<script src="video.js"></script>
+	</head>
+	<body>
+		<section id="reproductor">
+			<div id="mascara" style="position:relative"><img src="icon-play.png" id="icon-play"></div>
+			<audio id="medio">
+				<source src="music.mp3">
+			</audio>
+			<nav>
+				<div class="botones">
+					<button type="button" id="reproducir">Reproducir</button>
+				</div>
+				<div id="barra">
+					<div id="progreso"></div>
+					<div id="porcentaje">0%</div>
+				</div>
+				<div class="botones">
+					<input type="range" id="volumen" min="0" max="1" step="0.00001" value="1">
+				</div>
+				<div style="clear:both"></div>
+			</nav> 
+		</section>
+		<section id="logo">
+			<span class="texto">A</span>
+		</section>
+	</body>
+</html>
